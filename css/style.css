@@ -1,0 +1,250 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 200vh;
+  overflow-x: hidden;
+}
+
+/* Styling navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background-color: #333;
+}
+
+.navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+}
+
+.navbar ul li {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+
+.navbar ul li:first-child {
+  margin-left: 10rem;
+  -webkit-box-flex: 10;
+  -ms-flex-positive: 10;
+  flex-grow: 10;
+}
+
+.navbar ul li:first-child a {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.navbar ul li:first-child a:hover {
+  color: white;
+}
+
+.navbar ul li a {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar ul li a:hover {
+  color: red;
+}
+
+/* Header */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+  background-image: url("./images/mountains.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 60%;
+  height: 60%;
+}
+
+.header__content--heading {
+  font-size: 5rem;
+  color: #222;
+}
+
+.header__content--paragraph {
+  font-size: 2rem;
+  line-height: 190%;
+  padding: 2rem;
+  text-indent: 4rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Section 1 - the latest articles */
+.section-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 40vh;
+  margin: 0 auto;
+}
+
+.section-1 .section-1--heading {
+  width: 100%;
+  font-size: 3rem;
+  text-align: center;
+  padding: 3rem 0 1rem;
+}
+
+.section-1 .articles-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 3rem;
+  overflow-x: scroll;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.section-1 .articles-container .latest-article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  margin: 0 5rem;
+  padding: 0.2rem 3rem;
+  border: 0.2rem solid black;
+}
+
+.section-1 .articles-container .latest-article .image {
+  width: 100%;
+  height: 70%;
+  background-color: black;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.section-1 .articles-container .latest-article--name {
+  font-size: 2rem;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+  margin-left: 1rem;
+}
+
+/* Section 2 */
+.section-2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #444;
+}
+
+/* Footer */
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: #111;
+  font-size: 2rem;
+  color: white;
+}
+
+.footer--paragraph {
+  margin-right: auto;
+  margin-left: 10rem;
+}
+
+.footer--paragraph span {
+  color: red;
+  font-weight: 700;
+  font-size: 110%;
+  letter-spacing: 0.3rem;
+}
+
+.footer .copyright {
+  margin-right: 5rem;
+}
+/*# sourceMappingURL=style.css.map */
