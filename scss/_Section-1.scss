@@ -35,7 +35,7 @@
         right: -10%;
         top: 5%;
         font-weight: 500;
-        color: var(--navy-color);
+        color: var(--blue-color);
         transform: rotateZ(-90deg);
         transition: 0.2s;
       }
@@ -101,6 +101,16 @@
           color: var(--beige-color);
           border-bottom: 0.2rem solid var(--beige-color);
         }
+      }
+    }
+  }
+}
+
+@media (max-width: 1366px) {
+  .section-1 {
+    .articles-container {
+      .latest-article {
+        height: 120vh;
       }
     }
   }

@@ -192,6 +192,12 @@ body {
   font-weight: 500;
 }
 
+@media (max-width: 1366px) {
+  html {
+    font-size: 50%;
+  }
+}
+
 .section-1 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +256,7 @@ body {
   right: -10%;
   top: 5%;
   font-weight: 500;
-  color: var(--navy-color);
+  color: var(--blue-color);
   -webkit-transform: rotateZ(-90deg);
           transform: rotateZ(-90deg);
   -webkit-transition: 0.2s;
@@ -323,6 +329,12 @@ body {
 .section-1 .articles-container .latest-article .image:hover ~ .article--description .description-heading {
   color: var(--beige-color);
   border-bottom: 0.2rem solid var(--beige-color);
+}
+
+@media (max-width: 1366px) {
+  .section-1 .articles-container .latest-article {
+    height: 120vh;
+  }
 }
 
 .section-2 {
