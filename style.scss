@@ -1,12 +1,24 @@
+// font-family: 'Montserrat', sans-serif;
+
+:root {
+  --blue-color: #4c94bc;
+  --light-blue-color: #698fb3;
+  --beige-color: #bc8565;
+  --navy-color: #38516d;
+  --white-color: #d9e3e8;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -14,174 +26,8 @@ body {
   overflow-x: hidden;
 }
 
-/* Styling navbar */
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 8rem;
-  background-color: #333;
-
-  ul {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    height: 100%;
-    list-style-type: none;
-
-    li {
-      flex-grow: 1;
-
-      &:first-child {
-        margin-left: 10rem;
-        flex-grow: 10;
-
-        a {
-          font-size: 3.6rem;
-          font-weight: bold;
-          &:hover {
-            color: white;
-          }
-        }
-      }
-      a {
-        color: white;
-        font-size: 1.6rem;
-        font-weight: bold;
-        transition: 0.3s;
-
-        &:hover {
-          color: red;
-        }
-      }
-    }
-  }
-}
-
-/* Header */
-
-.header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
-  background-image: url("../images/mountains.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  background-attachment: fixed;
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    width: 60%;
-    height: 60%;
-
-    &--heading {
-      font-size: 5rem;
-      color: #222;
-    }
-
-    &--paragraph {
-      font-size: 2rem;
-      line-height: 190%;
-      padding: 2rem;
-      text-indent: 4rem;
-      text-align: center;
-      font-weight: bold;
-    }
-  }
-}
-
-/* Section 1 - the latest articles */
-
-.section-1 {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: 40vh;
-
-  .section-1--heading {
-    font-size: 3rem;
-    text-align: center;
-    padding: 3rem 0 1rem;
-  }
-
-  .articles-container {
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 100%;
-    padding: 3rem;
-    overflow-x: scroll;
-    flex-wrap: wrap;
-
-    .latest-article {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 20%;
-      height: 100%;
-      margin: 0 5rem;
-      padding: 0 1rem;
-      border: 0.2rem solid black;
-
-      .image {
-        width: 100%;
-        height: 70%;
-        background-color: black;
-        margin-bottom: 1rem;
-        cursor: pointer;
-      }
-
-      &--name {
-        font-size: 2rem;
-        align-self: flex-start;
-        margin-left: 1rem;
-      }
-    }
-  }
-}
-
-/* Section 2 */
-
-.section-2 {
-  width: 100%;
-  height: 100vh;
-  background-color: #444;
-}
-
-/* Footer */
-
-.footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  width: 100%;
-  background-color: #111;
-  font-size: 2rem;
-  color: white;
-
-  &--paragraph {
-    margin-right: auto;
-    margin-left: 10rem;
-    span {
-      color: red;
-      font-weight: 700;
-      font-size: 110%;
-      letter-spacing: 0.3rem;
-    }
-  }
-
-  .copyright {
-    margin-right: 5rem;
-  }
-}
+@import "scss/_Nav.scss";
+@import "scss/_Header.scss";
+@import "scss/_Section-1.scss";
+@import "scss/_Section-2.scss";
+@import "scss/_Footer.scss";

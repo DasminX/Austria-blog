@@ -5,73 +5,162 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blog Podróżniczy</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
       <ul>
-        <li><a href="#">Blog name</a></li>
-        <li><a href="#">Destination</a></li>
-        <li><a href="#">Travel advice</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="home">
+          <strong>nimsa</strong>
+          <p>o Austrii</p>
+        </li>
+        <li><a href="#blog">blog</a></li>
+        <li><a href="#aboutus">o nas</a></li>
+        <li><a href="#contact">kontakt</a></li>
       </ul>
     </nav>
 
     <!-- Header -->
     <header class="header">
       <div class="header__content">
-        <h1 class="header__content--heading">Austria</h1>
+        <h1 class="header__content--heading">austria bez tajemnic</h1>
         <p class="header__content--paragraph">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
-          reiciendis qui maxime, odio asperiores provident assumenda nulla!
-          Dolor qui hic possimus mollitia beatae numquam officia ipsum. Modi
-          consectetur consequatur velit! Lorem ipsum, dolor sit amet consectetur
-          adipisicing elit. Perferendis reiciendis qui maxime, odio asperiores
-          provident assumenda nulla! Dolor qui hic possimus mollitia beatae
-          numquam officia ipsum. Modi consectetur consequatur velit!
+          Ruszaj ze mną na wyprawę po Austrii! Urlop, wyjazd biznesowy,
+          emigracja? Czeka na Ciebie dawka konkretnych informacji, dzięki którym
+          będziesz mógł świadomie delektować się pobytem w Austrii, kiedy już
+          tam zawitasz!
         </p>
       </div>
     </header>
 
     <!-- Section 1 - latest articles -->
-    <section class="section-1">
-      <h2 class="section-1--heading section-heading">Najnowsze artykuly</h2>
+    <section class="section-1" id="blog">
+      <h2 class="section-1--heading section-heading">Blog:</h2>
       <div class="articles-container">
         <div class="latest-article">
-          <a class="image"></a>
-          <h3 class="latest-article--name">Article title</h3>
+          <img
+            src="./images/Graz - ratusz.jpg"
+            class="image"
+            class="image"
+            alt=""
+          />
+          <h3 class="rotated-text">Ratusz</h3>
+          <div class="article--description">
+            <h4 class="description-heading">Ratusz w Graz</h4>
+            <p class="description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              laudantium beatae modi, perspiciatis quasi illum recusandae
+              maiores consectetur, ex pariatur adipisci quod animi eius illo
+              ipsam nemo velit consequatur accusantium!
+            </p>
+          </div>
         </div>
         <div class="latest-article">
-          <a class="image"></a>
-          <h3 class="latest-article--name">Article title</h3>
+          <img src="./images/Graz - kolejka.jpg" class="image" alt="" />
+          <h3 class="rotated-text">Kolejka</h3>
+          <div class="article--description">
+            <h4 class="description-heading">Kolejka w Graz</h4>
+            <p class="description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              laudantium beatae modi, perspiciatis quasi illum recusandae
+              maiores consectetur, ex pariatur adipisci quod animi eius illo
+              ipsam nemo velit consequatur accusantium!
+            </p>
+          </div>
         </div>
         <div class="latest-article">
-          <a class="image"></a>
-          <h3 class="latest-article--name">Article title</h3>
+          <img
+            src="./images/Graz - piękne ujęcie nr1.jpg"
+            class="image"
+            alt=""
+          />
+          <h3 class="rotated-text">Starówka</h3>
+          <div class="article--description">
+            <h4 class="description-heading">Starówka w Graz</h4>
+            <p class="description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              laudantium beatae modi, perspiciatis quasi illum recusandae
+              maiores consectetur, ex pariatur adipisci quod animi eius illo
+              ipsam nemo velit consequatur accusantium!
+            </p>
+          </div>
         </div>
         <div class="latest-article">
-          <a class="image"></a>
-          <h3 class="latest-article--name">Article title</h3>
+          <img
+            src="./images/OŚRODEK NARCIARSKI - Bad Gastein.jpg"
+            class="image"
+            alt=""
+          />
+          <h3 class="rotated-text">Narty</h3>
+          <div class="article--description">
+            <h4 class="description-heading">Wypad do Bad Gastein</h4>
+            <p class="description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              laudantium beatae modi, perspiciatis quasi illum recusandae
+              maiores consectetur, ex pariatur adipisci quod animi eius illo
+              ipsam nemo velit consequatur accusantium!
+            </p>
+          </div>
         </div>
         <div class="latest-article">
-          <a class="image"></a>
-          <h3 class="latest-article--name">Article title</h3>
+          <img src="./images/Wiedeń - południe.jpg" class="image" alt="" />
+          <h3 class="rotated-text">Wiedeń</h3>
+          <div class="article--description">
+            <h4 class="description-heading">Spacer po Wiedniu</h4>
+            <p class="description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              laudantium beatae modi, perspiciatis quasi illum recusandae
+              maiores consectetur, ex pariatur adipisci quod animi eius illo
+              ipsam nemo velit consequatur accusantium!
+            </p>
+          </div>
         </div>
         <div class="latest-article">
-          <a class="image"></a>
-          <h3 class="latest-article--name">Article title</h3>
+          <img src="./images/Wiedeń nocą.jpeg" class="image" alt="" />
+          <h3 class="rotated-text">Wiedeń</h3>
+          <div class="article--description">
+            <h4 class="description-heading">Wiedeń nocą</h4>
+            <p class="description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus
+              laudantium beatae modi, perspiciatis quasi illum recusandae
+              maiores consectetur, ex pariatur adipisci quod animi eius illo
+              ipsam nemo velit consequatur accusantium!
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Section 2  idk what-->
-    <section class="section-2"></section>
+    <section class="section-2" id="aboutus">
+      <h2 class="aboutus--heading">A oto nasza blogowa ekipa:</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="./avatars/anna.png" alt="" class="avatar" />
+          <p class="username">Anna - UX/UI designer</p>
+        </div>
+        <div class="card">
+          <img src="./avatars/wojciech.png" alt="" class="avatar" />
+          <p class="username">Wojciech - front-end dev</p>
+        </div>
+        <div class="card">
+          <img src="./avatars/magdalena.png" alt="" class="avatar" />
+          <p class="username">Magdalena - UX/UI designer</p>
+        </div>
+        <div class="card">
+          <img src="./avatars/maciej.png" alt="" class="avatar" />
+          <p class="username">Maciej - front-end dev</p>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
-      <p class="footer--paragraph">Made by <span>SuperEkipa</span></p>
+      <p class="footer--paragraph">Made by <span>OreoTeam</span></p>
       <p class="copyright">&copy; All rights reserved.</p>
     </footer>
     <script src="./script.js"></script>

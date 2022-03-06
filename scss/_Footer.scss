@@ -1,0 +1,25 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: var(--navy-color);
+  font-size: 2rem;
+  color: white;
+
+  &--paragraph {
+    margin-right: auto;
+    margin-left: 10rem;
+    span {
+      color: var(--beige-color);
+      font-weight: 700;
+      font-size: 130%;
+      letter-spacing: 0.2rem;
+    }
+  }
+
+  .copyright {
+    margin-right: 5rem;
+  }
+}
