@@ -21,7 +21,6 @@ const changePhoto = () => {
   idx++
   if (idx > srcArr.length - 1) idx = 0
   header.style.backgroundImage = `url('${srcArr[idx]}')`
-  console.log(idx)
 }
 
 setInterval(changePhoto, 4000)

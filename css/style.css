@@ -70,9 +70,6 @@ body {
 .navbar ul li:first-child {
   position: relative;
   margin-left: 10rem;
-  -webkit-box-flex: 10;
-      -ms-flex-positive: 10;
-          flex-grow: 10;
   color: white;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -98,6 +95,12 @@ body {
 .navbar ul li:first-child p {
   margin-left: 8.8rem;
   font-size: 1.2rem;
+}
+
+.navbar ul li:nth-child(2) {
+  -webkit-box-flex: 16;
+      -ms-flex-positive: 16;
+          flex-grow: 16;
 }
 
 .navbar ul li a {

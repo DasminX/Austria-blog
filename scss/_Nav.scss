@@ -32,7 +32,6 @@
       &:first-child {
         position: relative;
         margin-left: 10rem;
-        flex-grow: 10;
         color: white;
         user-select: none;
         cursor: pointer;
@@ -54,6 +53,10 @@
           margin-left: 8.8rem;
           font-size: 1.2rem;
         }
+      }
+
+      &:nth-child(2) {
+        flex-grow: 16;
       }
 
       a {
